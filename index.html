@@ -4,7 +4,594 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Valentin en distancia</title>
-    <link rel="stylesheet" href="./stylesKitty.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=EB+Garamond&family=Lilita+One&family=Roboto:ital,wght@1,100&family=Rubik+Pixels&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Darumadrop+One&family=EB+Garamond&family=Lilita+One&family=Roboto:ital,wght@1,100&family=Rubik+Pixels&display=swap');
+        
+        body{
+            /* font-family: 'Darumadrop One', sans-serif; */
+            font-family: 'Concert One', sans-serif;
+            background: url(https://i.pinimg.com/originals/4e/f8/85/4ef8850ae0c8d84010e09bf3023cd4f7.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            }
+        
+        .inicio{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        .btnEmpecemos{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        
+        .introduccion{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .expli{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .pregunta1{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .pregunta2{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .pregunta3{
+           display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        
+        .gift{
+           display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 90px;
+          }  
+        
+        .botones1{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        
+        .botones2{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        
+        .botones3{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        
+        .regalo-final{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        
+        #siBtn {
+          margin: 0px 50px 0px 0px;
+          background-color: #00b894; /* Verde */
+          border: 2px solid #fff; /* Borde blanco */
+          border-radius: 10px;
+          width: 300px;
+          height: 72px;
+          font-size: 25px;
+        }
+        
+        #siBtn:hover {
+          transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+        }
+        
+        #noBtn {
+          background-color: #d63031; /* Rojo */
+          border: 2px solid #fff; /* Borde blanco */
+          border-radius: 10px;
+          width: 300px;
+          height: 72px;
+          font-size: 25px;
+        }
+        
+        #noBtn:hover {
+          transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+        }
+        
+        #siBtn2 {
+          margin: 0px 50px 0px 0px;
+          background-color: #00b894; /* Verde */
+          border: 2px solid #fff; /* Borde blanco */
+          border-radius: 10px;
+          width: 300px;
+          height: 72px;
+          font-size: 25px;
+        }
+        
+        #siBtn2:hover {
+          transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+        }
+        
+        #noBtn2 {
+          background-color: #d63031; /* Rojo */
+          border: 2px solid #fff; /* Borde blanco */
+          border-radius: 10px;
+          width: 300px;
+          height: 72px;
+          font-size: 25px;
+        }
+        
+        #noBtn2:hover {
+          transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+        }
+        
+        #siBtn3 {
+          margin: 0px 50px 0px 0px;
+          background-color: #00b894; /* Verde */
+          border: 2px solid #fff; /* Borde blanco */
+          border-radius: 10px;
+          width: 300px;
+          height: 72px;
+          font-size: 25px;
+        }
+        
+        #siBtn3:hover {
+          transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+        }
+        
+        #noBtn3 {
+          background-color: #d63031; /* Rojo */
+          border: 2px solid #fff; /* Borde blanco */
+          border-radius: 10px;
+          width: 300px;
+          height: 72px;
+          font-size: 25px;
+        }
+        
+        #noBtn3:hover {
+          transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+        }
+        
+        #sorpresa {
+          display: inline-block;
+          padding: 12px 24px;
+          border: 1px solid #4f4f4f;
+          border-radius: 4px;
+          transition: all 0.2s ease-in;
+          position: relative;
+          overflow: hidden;
+          font-size: 19px;
+          cursor: pointer;
+          color: black;
+          z-index: 1;
+        }
+        
+        #sorpresa:before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%) scaleY(1) scaleX(1.25);
+          top: 100%;
+          width: 140%;
+          height: 180%;
+          background-color: rgba(0, 0, 0, 0.05);
+          border-radius: 50%;
+          display: block;
+          transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+          z-index: -1;
+        }
+        
+        #sorpresa:after {
+          content: "";
+          position: absolute;
+          left: 55%;
+          transform: translateX(-50%) scaleY(1) scaleX(1.45);
+          top: 180%;
+          width: 160%;
+          height: 190%;
+          background-color: purple;
+          border-radius: 50%;
+          display: block;
+          transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+          z-index: -1;
+        }
+        
+        #sorpresa:hover {
+          color: #ffffff;
+          border: 1px solid #39bda7;
+        }
+        
+        #sorpresa:hover:before {
+          top: -35%;
+          background-color: purple;
+          transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        }
+        
+        #sorpresa:hover:after {
+          top: -45%;
+          background-color: purple;
+          transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        }
+        
+        .inicio-h1{
+          color: rgb(180, 0, 0);
+            font-size: 5rem;
+            position: absolute;
+            margin: -100px 0px 90px -100px ;
+            text-align: center;
+            text-shadow: 
+            -2px -2px 0 white,
+            -2px -2px 0 white,
+            -2px -2px 0 white,
+            -2px -2px 0 white;
+        }
+        
+        .title{
+            color: rgb(180, 0, 0);
+            font-size: 4rem;
+            position: absolute;
+            margin: -90px 50px 50px -350px ;
+            text-align: center;
+            text-shadow: 
+            -2px -2px 0 white,
+            -2px -2px 0 white,
+            -2px -2px 0 white,
+            -2px -2px 0 white;
+            }
+        
+        .p1{
+            color: rgb(180, 0, 0);
+            font-size: 2rem;
+            position: absolute;
+            margin: 0px 0px 450px 0px ;
+            text-align: center;
+            text-shadow: 
+            -2px -2px 0 white,
+            -2px -2px 0 white,
+            -2px -2px 0 white,
+            -2px -2px 0 white;
+        }
+        
+        .lovep{
+          color: rgb(180, 0, 0);
+          font-size: 4rem;
+          position: absolute;
+          margin: 0px 0px 450px 0px ;
+          text-align: center;
+          text-shadow: 
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white;
+        }
+          
+        .girl{
+          color: rgb(180, 0, 0);
+          font-size: 4rem;
+          position: absolute;
+          margin: 0px 0px 450px 0px ;
+          text-align: center;
+          text-shadow: 
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white;
+        }
+        
+        .spain{
+          color: rgb(180, 0, 0);
+          font-size: 4rem;
+          position: absolute;
+          margin: 0px 0px 450px 0px ;
+          text-align: center;
+          text-shadow: 
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white;
+        }
+        
+        .title2{
+          color: rgb(180, 0, 0);
+          font-size: 4rem;
+          position: absolute;
+          margin: 0px 0px 450px 0px ;
+          text-align: center;
+          text-shadow: 
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white;
+        }
+        
+        .p2{
+          color: rgb(180, 0, 0);
+          font-size: 2rem;
+          position: absolute;
+          margin: 30px 0px 320px 0px ;
+          text-align: center;
+          text-shadow: 
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white;
+        }
+        
+        .p3{
+          color: rgb(180, 0, 0);
+          font-size: 2rem;
+          position: absolute;
+          margin: 0px 0px 170px 0px ;
+          text-align: center;
+          text-shadow: 
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white,
+          -2px -2px 0 white;
+        }
+        
+        .empecemos {
+          width: 200px;
+          height: 40px;
+          background: purple;
+          box-shadow: -6px 6px 0 0 hsl(313, 100%, 40%);
+          border: none;
+          outline: none;
+          position: relative;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        
+        .empecemos:active {
+          box-shadow: -3px 3px 0 0 hsl(313, 100%, 40%);
+          top: 3px;
+          left: -3px;
+          background-color: hsl(313, 100%, 40%);
+        }
+        
+        .empecemos::before {
+          content: '';
+          position: absolute;
+          background: none;
+          width: 0;
+          height: 0;
+          border: 6px solid transparent;
+          border-right: 6px solid hsl(313, 100%, 40%);
+          border-left-width: 0;
+          top: 0;
+          left: -6px;
+        }
+        
+        .empecemos:active::before {
+          border: 3px solid transparent;
+          border-right: 3px solid hsl(313, 100%, 40%);
+        }
+        
+        .empecemos::after {
+          content: '';
+          position: absolute;
+          background: none;
+          width: 0;
+          height: 0;
+          border: 6px solid transparent;
+          border-top: 6px solid hsl(313, 100%, 40%);
+          border-bottom-width: 0;
+          bottom: -6px;
+          right: 0;
+        }
+        
+        .empecemos:active:after {
+          border: 3px solid transparent;
+          border-top: 3px solid hsl(313, 100%, 40%);
+        }
+        
+            #siguiente {
+                width: 200px;
+                height: 40px;
+                background: purple;
+                box-shadow: -6px 6px 0 0 hsl(313, 100%, 40%);
+                border: none;
+                outline: none;
+                position: relative;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+              
+              #siguiente:active {
+                box-shadow: -3px 3px 0 0 hsl(313, 100%, 40%);
+                top: 3px;
+                left: -3px;
+                background-color: hsl(313, 100%, 40%);
+              }
+              
+              #siguiente::before {
+                content: '';
+                position: absolute;
+                background: none;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-right: 6px solid hsl(313, 100%, 40%);
+                border-left-width: 0;
+                top: 0;
+                left: -6px;
+              }
+              
+              #siguiente:active::before {
+                border: 3px solid transparent;
+                border-right: 3px solid hsl(313, 100%, 40%);
+              }
+              
+              #siguiente::after {
+                content: '';
+                position: absolute;
+                background: none;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-top: 6px solid hsl(313, 100%, 40%);
+                border-bottom-width: 0;
+                bottom: -6px;
+                right: 0;
+              }
+              
+              #siguiente:active:after {
+                border: 3px solid transparent;
+                border-top: 3px solid hsl(313, 100%, 40%);
+              }
+        
+              #siguiente2 {
+                width: 200px;
+                height: 40px;
+                background: purple;
+                box-shadow: -6px 6px 0 0 hsl(313, 100%, 40%);
+                border: none;
+                outline: none;
+                position: relative;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+              
+              #siguiente2:active {
+                box-shadow: -3px 3px 0 0 hsl(313, 100%, 40%);
+                top: 3px;
+                left: -3px;
+                background-color: hsl(313, 100%, 40%);
+              }
+              
+              #siguiente2::before {
+                content: '';
+                position: absolute;
+                background: none;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-right: 6px solid hsl(313, 100%, 40%);
+                border-left-width: 0;
+                top: 0;
+                left: -6px;
+              }
+              
+              #siguiente2:active::before {
+                border: 3px solid transparent;
+                border-right: 3px solid hsl(313, 100%, 40%);
+              }
+              
+              #siguiente2::after {
+                content: '';
+                position: absolute;
+                background: none;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-top: 6px solid hsl(313, 100%, 40%);
+                border-bottom-width: 0;
+                bottom: -6px;
+                right: 0;
+              }
+              
+              #siguiente2:active:after {
+                border: 3px solid transparent;
+                border-top: 3px solid hsl(313, 100%, 40%);
+              }
+              
+        .imgInicio{
+            height: 100%;
+            width: 100%;
+            margin: 0px 90px 100px 0px;
+        }
+        
+        .gif1{
+            height: 70%;
+            width: 70%;
+            margin: 90px 0px 0px;
+        }
+        
+        .gif2{
+            height: 70%;
+            width: 70%;
+            margin: 190px 0px 0px;
+        }
+        
+        .gif3{
+          height: 70%;
+          width: 70%;
+          margin: 60px 0px 60px;
+        }
+        
+        .gif4{
+          height: 70%;
+          width: 70%;
+          margin: 60px 0px 60px;
+        }
+        
+        .gif5{
+          height: 70%;
+          width: 70%;
+          margin: 60px 0px 60px;
+        }
+        
+        .regaloImg{
+          height: 30%;
+          width: 30%;
+          margin-top: 200px;
+        }
+        
+        </style>
 </head>
 <body>
 
@@ -97,7 +684,136 @@
             </button>
             </div>
 </section>
-    <script src="./sanvalentin.js"></script>
+
+    <script >
+
+let sectionInicio = document.getElementById('sanvalen')
+let sectionPresentacion = document.getElementById("presentacion")
+let sectionExplicacion = document.getElementById("explicacion")
+let sectionRegalo = document.getElementById("regalo")
+let sectionEncuesta = document.getElementById("encuesta")
+let sectionEncuesta2 = document.getElementById("encuesta2")
+let sectionEncuesta3 = document.getElementById("encuesta3")
+let botonDeInicio = document.getElementById("btnInicio");
+let botonsiguiente = document.getElementById("siguiente");
+let botonsiguiente2 = document.getElementById("siguiente2");
+let btNo =  document.getElementById('noBtn')
+let btNo2=  document.getElementById('noBtn2')
+let btNo3 =  document.getElementById('noBtn3')
+let btnSi = document.getElementById("siBtn")
+let btnSi2 = document.getElementById("siBtn2")
+let btnSi3 = document.getElementById("siBtn3")
+let regaloSorpresa = document.getElementById("sorpresa")
+let numeroDefault = 9
+
+// let frases = ["EN SERIO!!!","Me lo esperaba","Me lo suponia","No sigas :((","Mentirosa😭💜","USTED NO ME AMA","MIENTESSS!!"]
+
+botonDeInicio.addEventListener('click',(e)=>{
+    sectionInicio.style.display = "none"
+    sectionPresentacion.style.display  = "block"
+})
+
+botonsiguiente.addEventListener("click",(e)=>{    
+sectionPresentacion.style.display = "none"
+sectionExplicacion.style.display  = "block"
+})
+botonsiguiente2.addEventListener("click",(e)=>{    
+sectionExplicacion.style.display  = "none"
+sectionEncuesta.style.display  = "block"
+})
+
+btNo.addEventListener("mouseenter", (e) => {
+    let posX = Math.random() * (window.innerWidth - 200); 
+    let posY = Math.random() * (window.innerHeight - 50)
+
+    noBtn.style.position = 'absolute';
+    noBtn.style.transition = 'all 0.5s'; 
+    noBtn.style.left = posX + 'px';
+    noBtn.style.top = posY + 'px';
+
+    frasesBtn()
+
+  });
+
+btNo2.addEventListener("mouseenter", (e) => {
+
+    let posX = Math.random() * (window.innerWidth - 200); 
+    let posY = Math.random() * (window.innerHeight - 50)
+
+    noBtn2.style.position = 'absolute';
+    noBtn2.style.transition = 'all 0.5s'; 
+    noBtn2.style.left = posX + 'px';
+    noBtn2.style.top = posY + 'px';
+
+    frasesBtn()
+
+  });
+  
+btNo3.addEventListener("mouseenter", (e) => {
+    let posX = Math.random() * (window.innerWidth - 200); 
+    let posY = Math.random() * (window.innerHeight - 50)
+
+    noBtn3.style.position = 'absolute';
+    noBtn3.style.transition = 'all 0.5s'; 
+    noBtn3.style.left = posX + 'px';
+    noBtn3.style.top = posY + 'px';
+
+    frasesBtn()
+
+  });  
+
+btnSi.addEventListener('click',(e)=>{
+    sectionEncuesta.style.display  = "none"
+    sectionEncuesta2.style.display  = "block"
+});
+
+btnSi2.addEventListener('click',(e)=>{
+    sectionEncuesta2.style.display  = "none"
+    sectionEncuesta3.style.display  = "block"
+});
+
+btnSi3.addEventListener('click',(e)=>{
+    sectionEncuesta3.style.display  = "none"
+    sectionRegalo.style.display  = "block"
+});
+
+regaloSorpresa.addEventListener('click',(e)=>{
+    sectionRegalo.style.display  = "none"
+})
+
+function frasesBtn (){
+    
+i = aleatorio(0,numeroDefault - 1   )
+
+let numero = i
+
+let frases = {
+"0":"(SI) NO MIENTAS DI QUE SI😭",
+"1":"SI (EN SERIO!!!)",
+"2":"SI (Me lo esperaba)",
+"3":"SI (Me lo suponia)",
+'4':"SI (No sigas 🙁)",
+'5':"SI (Mentirosa😭💜)",
+'6':"SI (USTED NO ME AMA)",
+'7':"SI (MIENTESSS!!)",
+'8':"SI (Severa hp 🙂)",
+'9':"SI (DIME QUE SI POR FAVOR😭)",
+}    
+
+let frase = frases[numero] || numeroDefault
+
+btnSi.innerHTML = frase
+btnSi2.innerHTML = frase
+btnSi3.innerHTML = frase
+
+
+}
+
+function aleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+    </script>
     
 </body>
 </html>
